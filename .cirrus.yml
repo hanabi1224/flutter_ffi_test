@@ -5,9 +5,10 @@ task:
     folder: ~/.pub-cache
   env:
     matrix:
-      CHANNEL: "stable"
-      CHANNEL: "beta"
+      CHANNEL: "master"
       CHANNEL: "dev"
+      CHANNEL: "beta"
+      CHANNEL: "stable"
   setup_script:
     - pod repo update
     - flutter channel $CHANNEL
